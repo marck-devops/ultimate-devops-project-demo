@@ -95,8 +95,8 @@ jobs:
 
         - name: Commit and Push changes
           run: |
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --global user.name "marck-devops"
+            git config --global user.email "marck-devops@gmail.com"
             git add kubernetes/productcatalog/deploy.yaml
             git diff --cached --quiet || git commit -m "[CI] Update image tag in K8s deployment manifest"
             git push
